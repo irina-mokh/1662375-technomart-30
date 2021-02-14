@@ -12,20 +12,22 @@
 </head>
 <body class="page-body">
   <header class="main-header">
-    <div class="submenu-wrapper wrapper">
-      <div class="submenu">
+    <div class="submenu-wrapper">
+      <div class="submenu container">
         <a class="logo"><img  class="logo__pic" src="img/icons/logo.svg" alt="Техномарт" width="108" height="18"></a>
         <div class="search">
           <input class="link search-form" type="search" name="search" placeholder="Поиск:">
-          <span class="search-icon"></span>
+          <svg class="search-icon" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
+          </svg>
         </div>
         <a class="link bookmarks" href="#">Закладки:</a>
         <a class="link cart" href="#">Корзина:</a>
         <button class="button button_green" type=" button link">Оформить заказ</button>
       </div>
     </div>
-    <div class="main-header-wrapper wrapper">
-      <div class="main-header__content">
+    <div class="main-header-wrapper">
+      <div class="main-header__content container">
           <p class="main-header__subtitle"><i>Интернет-магазин строительных материалов и инструментов для ремонта</i></p>
           <div class="main-header__contact">
             <a class="main-header__phone phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
@@ -36,7 +38,7 @@
             <a class="button button_account" href="#">Регистрация</a>
           </div>
         </div>    
-        <nav class="main-header__menu">
+        <nav class="main-header__menu container">
           <ul class="main-header__nav nav">
             <li class="nav__item"><a class="link" href="index.html">Главная</a> </li>
             <li class="nav__item"><a class="link" href="#">Компания</a> </li>
@@ -51,7 +53,7 @@
     </header>
     <main>
       <h1 class="visually-hidden">Интенет-магазин Техномарт</h1>
-      <div class="wrapper">
+      <div class="container">
         <ul class="category category-layout">
           <li class="category__card category__card_yellow">
             <h2 class="title">Материалы</h2>
@@ -175,8 +177,8 @@
           </ul>
         </section> 
       </div>
-      <div class="services-wrapper wrapper">
-        <section class="services">
+      <div class="services-wrapper">
+        <section class="services container">
           <h2 class="title">Сервисы</h2>
           <p class="services__text">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           <div class="services__container">
@@ -203,7 +205,7 @@
           </div>
         </section>
       </div>
-      <div class="wrapper">
+      <div class="container">
         <div class="about">
           <section class="about__container">
             <h2 class="title">Компания "Техномарт"</h2>
@@ -214,20 +216,20 @@
               <li class="carrier__item">Автотрейдинг</li>
               <li class="carrier__item">ЖелДорЭкспедиция</li>
             </ul>
-            <a class="button button_red" type="button">Подробнее о компании</a>
+            <a class="button button_red button-details" type="button">Подробнее о компании</a>
           </section>
           <section class="about__container">
             <h3 class="title">Контакты</h3>
             <p>Вы можете забрать товар сами, заехав в наш офис:</p>
             <a href="#"><img class="map" src="img/map.png" alt="Карта с местоположением" width="300" height="158"></a>
-            <a class="button button_red" type="button">Заблудились? Напишите нам!</a>
+            <a class="button button_red button-wide" type="button">Заблудились? Напишите нам!</a>
           </section>
         </div>
       </div>
     </main>
       <footer class="main-footer">
-        <div class="footer-wrapper_blue wrapper">
-          <div class="main-footer__grid-container">
+        <div class="footer-wrapper_blue">
+          <div class="main-footer__grid-container container">
             <a class="logo" href="#"><img  class="logo__pic" src="img/icons/logo.svg" alt="Техномарт" width="108" height="18"></a>
             <p class="footer-contact">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
             <a class="footer__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
@@ -247,15 +249,15 @@
             </ul>
           </div>
         </div>
-        <div class="footer-wrapper_darkblue wrapper">
-          <div class="main-footer__flex-container">
+        <div class="footer-wrapper_darkblue">
+          <div class="main-footer__flex-container container">
             <div class="copyright">
               <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
             </div>
             <ul class="social">
-              <li class="social__item"><a href="#"><img src="img/icons/icon-vk.svg" alt="VK" width="26" height="15"></a></li>
-              <li class="social__item"><a href="#"><img src="img/icons/icon-fb.svg" alt="facebook" width="12" height="22"></a></li>
-              <li class="social__item"><a href="#"><img src="img/icons/icon-insta.svg" alt="instagram" width="21" height="21"></a></li>
+              <li class="social__item"><a class="social-icon" href="#"><img src="img/icons/icon-vk.svg" alt="VK" width="26" height="15"></a></li>
+              <li class="social__item"><a class="social-icon" href="#"><img src="img/icons/icon-fb.svg" alt="facebook" width="12" height="22"></a></li>
+              <li class="social__item"><a class="social-icon" href="#"><img src="img/icons/icon-insta.svg" alt="instagram" width="21" height="21"></a></li>
            </ul>
             <p>Обратная связь:
               <a class="footer-link"  href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
@@ -269,18 +271,24 @@
     </div>
     <form  action="https://echo.htmlacademy.ru" method="post">
       <div class="contact-form">
-        <div class="form-block_small">
-          <label for="name">Ваше имя:</label>
-          <input class="form__field form__field_small" type="text" name="name" id="name" placeholder="Имя Фамилия">
+        <div class="contact-form__container">
+          <div class="form-block_small">
+            <label for="name">Ваше имя:</label>
+            <input class="form__field form__field_small" type="text" name="name" id="name" placeholder="Имя Фамилия">
+          </div>
+          <div class="form-block_small">
+            <label for="email">Ваш e-mail:</label>
+            <input class="form__field form__field_small"  type="email" name="email" id="email" placeholder="email@example.com">
+          </div>
+          <div class="form-block_big">
+            <label for="messsage">Текст письма:</label>
+            <textarea class="form__field form__field_big "  id="messsage" placeholder="В свободной форме"></textarea> 
+          </div>
         </div>
-        <div class="form-block_small">
-          <label for="email">Ваш e-mail:</label>
-          <input class="form__field form__field_small"  type="email" name="email" id="email" placeholder="email@example.com">
-        </div>
-        <div class="form-block_big">
-          <label for="messsage">Текст письма:</label>
-          <textarea class="form__field form__field_big "  id="messsage" placeholder="В свободной форме"></textarea> 
-          <button class="send button button_red" type="submit">Отправить</button>
+        <div class="form-bottom-wrapper">
+          <div class="contact-form__container">
+            <button class="button-wide button button_red" type="submit">Отправить</button>
+          </div>
         </div>
         <button class="close" type="button"></button>
       </div>
