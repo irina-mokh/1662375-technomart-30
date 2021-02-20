@@ -21,8 +21,8 @@
             <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
           </svg>
         </div>
-        <a class="link bookmarks" href="#">Закладки:</a>
-        <a class="link cart" href="#">Корзина:</a>
+        <a class="link bookmarks" href="#">Закладки: 0</a>
+        <a class="link cart" href="#">Корзина: 0</a>
         <button class="button button_green" type=" button link">Оформить заказ</button>
       </div>
     </div>
@@ -55,7 +55,7 @@
       <h1 class="visually-hidden">Интенет-магазин Техномарт</h1>
       <div class="container">
         <ul class="category category-layout">
-          <li class="category__card category__card_yellow">
+          <li class="category__card category__card_yellow label-new">
             <h2 class="title">Материалы</h2>
             <a class="button button_category" href="#">на любой вкус</a>
           </li>
@@ -112,7 +112,7 @@
               <span class="product__prev-price"><s>32500 p.</s></span>
               <button class="button product__button" type="button">25500 p.</button>
             </li>
-            <li class="product">
+            <li class="product label-new">
               <a class="product__pic" href="#"><img src="img/products/bosch_bfg3000.png" alt="Перфоратор BOSCH BFG 3000" width="127" height="112"></a>
               <div class="hover-buttons">
                 <button class="hover-button_buy">Купить</button>
@@ -132,7 +132,7 @@
               <span class="product__prev-price"><s>30500 p.</s></span>
               <button class="button product__button" type="button">25500 p.</button>
             </li>
-            <li class="product">
+            <li class="product label-new">
               <a class="product__pic" href="#"><img src="img/products/bosch_bfg2000.png" alt="Перфоратор BOSCH BFG 2000" width="127" height="112"></a>
               <div class="hover-buttons">
                 <button class="hover-button_buy">Купить</button>
@@ -208,9 +208,9 @@
       <div class="container">
         <div class="about">
           <section class="about__container">
-            <h2 class="title">Компания "Техномарт"</h2>
-            <p> Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-            <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
+            <h2 class="title">Компания &laquo;Техномарт&raquo;</h2>
+            <p class="about__text"> Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+            <p class="about__text">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
             <ul class="carrier">
               <li class="carrier__item">Деловые линии</li>
               <li class="carrier__item">Автотрейдинг</li>
@@ -220,9 +220,12 @@
           </section>
           <section class="about__container">
             <h3 class="title">Контакты</h3>
-            <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-            <a href="#"><img class="map" src="img/map.png" alt="Карта с местоположением" width="300" height="158"></a>
-            <a class="button button_red button-wide" type="button">Заблудились? Напишите нам!</a>
+            <p  class="about__text">Вы можете забрать товар сами,<br> заехав в наш офис:</p>
+            <a class="map-box" href="#">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7994.445003359652!2d30.312944548956864!3d59.93859264349951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1613832996238!5m2!1sru!2sru" width="300" height="158" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              <img class="map" src="img/map.png" alt="Карта с местоположением" width="300" height="158"></a>
+              <a class="button button_red button-wide" type="button">Заблудились? Напишите нам!
+            </a>
           </section>
         </div>
       </div>
@@ -230,7 +233,7 @@
       <footer class="main-footer">
         <div class="footer-wrapper_blue">
           <div class="main-footer__grid-container container">
-            <a class="logo" href="#"><img  class="logo__pic" src="img/icons/logo.svg" alt="Техномарт" width="108" height="18"></a>
+            <a class="logo-footer logo" href="#"><img  class="logo__pic" src="img/icons/logo.svg" alt="Техномарт" width="137" height="22"></a>
             <p class="footer-contact">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
             <a class="footer__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
             </p>
@@ -258,11 +261,11 @@
               <li class="social__item"><a class="social-icon" href="#"><img src="img/icons/icon-vk.svg" alt="VK" width="26" height="15"></a></li>
               <li class="social__item"><a class="social-icon" href="#"><img src="img/icons/icon-fb.svg" alt="facebook" width="12" height="22"></a></li>
               <li class="social__item"><a class="social-icon" href="#"><img src="img/icons/icon-insta.svg" alt="instagram" width="21" height="21"></a></li>
-           </ul>
-            <p>Обратная связь:
+            </ul>
+            <p class="email">Обратная связь:
               <a class="footer-link"  href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </p>
-            <p>Разработано -
+            <p class="email">Разработано -
               <a class="footer-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademyru</a>
             </p>
           </div>
