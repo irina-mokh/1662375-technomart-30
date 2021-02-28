@@ -23,18 +23,21 @@
         </div>
         <a class="link bookmarks" href="#">Закладки: 0</a>
         <a class="link cart" href="#">Корзина: 0</a>
-        <button class="button button_green" type=" button link">Оформить заказ</button>
+        <button class="button button_green" type="button">Оформить заказ</button>
       </div>
     </div>
     <div class="main-header-wrapper">
       <div class="main-header__content container">
-          <p class="main-header__subtitle"><i>Интернет-магазин строительных материалов <nobr>и инструментов</nobr> для ремонта</i></p>
+          <p class="main-header__subtitle">Интернет-магазин строительных материалов <br>и инструментов для ремонта</p>
           <div class="main-header__contact">
             <a class="main-header__phone phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
             <p class="main-header__adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
           <div class="main-header__login">
-            <a class="button button_account login" href="#">Войти</a>
+            <a class="button button_account login" href="#">    
+              <svg class="user-icon" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.1667 8.5L5.71429 0V6H0V11H5.71429V17L14.1667 8.5Z" fill="#C5C5C5"/><path d="M16.177 15.01H11.3894V17H16.177C18.2513 17 19.038 15.19 19.0618 13.974V3.028C19.038 1.811 18.2513 0 16.177 0H11.3894V1.99H16.177C16.9761 1.99 17.1218 2.671 17.1389 3.047V13.951C17.1227 14.327 16.9761 15.01 16.177 15.01Z" fill="#C5C5C5"/>
+              </svg>
+              Войти</a>
             <a class="button button_account" href="#">Регистрация</a>
           </div>
         </div>    
@@ -52,7 +55,7 @@
       </div>
     </header>
     <main>
-      <h1 class="visually-hidden">Интенет-магазин Техномарт</h1>
+      <h1 class="visually-hidden">Интернет-магазин Техномарт</h1>
       <div class="container">
         <ul class="category category-layout">
           <li class="category__card category__card_yellow label-new">
@@ -73,28 +76,30 @@
           </li>
           <li class="category__card category__card_golden">
             <h2 class="title">Доставка</h2>
-            <a class="button button_category"href="#">бесплатно</a>
+            <a class="button button_category" href="#">бесплатно</a>
           </li>
-          <ul class="slider">
-            <li class="slider__item slider__item_hammers">
-              <div class="slider__header">
-                <h2 class="slider__heading">Перфораторы</h2>
-                <p class="slider__slogan">Настоящие мужские игрушки</p>
-              </div>
-              <div class="slider__button">
-                <a class="button button_red" href="catalog.html">открыть каталог</a>
-              </div>
-            </li>
-            <li class="slider__item slider__item_drills">
-              <div class="slider__header">
-                <h2 class="slider__heading">Дрели</h2>
-                <p  class="slider__slogan">Соседям на радость!</p>
-              </div>
-              <div class="slider__button">
-                <a class="button button_red" href="catalog.html">открыть каталог</a>
-              </div>
-            </li>
-          </ul>
+          <li class="slider">
+            <ul class="slider">
+              <li class="slider__item slider__item_hammers">
+                <div class="slider__header">
+                  <h2 class="slider__heading">Перфораторы</h2>
+                  <p class="slider__slogan">Настоящие мужские игрушки</p>
+                </div>
+                <div class="slider__button">
+                  <a class="button button_red" href="catalog.html">открыть каталог</a>
+                </div>
+              </li>
+              <li class="slider__item slider__item_drills">
+                <div class="slider__header">
+                  <h2 class="slider__heading">Дрели</h2>
+                  <p  class="slider__slogan">Соседям на радость!</p>
+                </div>
+                <div class="slider__button">
+                  <a class="button button_red" href="catalog.html">открыть каталог</a>
+                </div>
+              </li>
+            </ul>
+          </li>
         </ul>
         <section>
           <header class="inner-header">
@@ -216,85 +221,90 @@
               <li class="carrier__item">Автотрейдинг</li>
               <li class="carrier__item">ЖелДорЭкспедиция</li>
             </ul>
-            <a class="button button_red button-details" type="button">Подробнее о компании</a>
+            <a class="button button_red button-details" href="#">Подробнее о компании</a>
           </section>
           <section class="about__container">
             <h3 class="title">Контакты</h3>
             <p  class="about__text">Вы можете забрать товар сами,<br> заехав в наш офис:</p>
-            <a class="map-box" href="#">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7994.445003359652!2d30.312944548956864!3d59.93859264349951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1613832996238!5m2!1sru!2sru" width="300" height="158" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-              <img class="map" src="img/map.png" alt="Карта с местоположением" width="300" height="158"></a>
-              <a class="button button_red button-wide" type="button">Заблудились? Напишите нам!
+            <button class="map" type="button">
+              <img src="img/map.png" alt="Карта с местоположением" width="300" height="158">
+            </button>
+            <a class="button button_red button-wide" href="#">Заблудились? Напишите нам!
             </a>
           </section>
         </div>
       </div>
     </main>
-      <footer class="main-footer">
-        <div class="footer-wrapper_blue">
-          <div class="main-footer__grid-container container">
-            <a class="logo-footer logo" href="#"><img  class="logo__pic" src="img/icons/logo.svg" alt="Техномарт" width="137" height="22"></a>
-            <p class="footer-contact">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-            <a class="footer__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-            </p>
-            <ul class="main-footer__nav nav">
-              <li class="footer__nav-item"><a class="link" href="#">Компания</a></li>
-              <li class="footer__nav-item"><a class="link" href="#">Новости</a></li>
-              <li class="footer__nav-item"><a class="link" href="catalog.html">Каталог</a></li>
-              <li class="footer__nav-item"><a class="link" href="#">Доставка</a></li>
-              <li class="footer__nav-item"><a class="link" href="#">Контакты</a></li>
-            </ul>
-            <ul class="main-footer__nav nav">
-              <li class="footer__nav-item"><a class="link link_yellow" href="#">Материалы</a></li>
-              <li class="footer__nav-item"><a class="link link_yellow" href="#">Техника</a></li>
-              <li class="footer__nav-item"><a class="link link_yellow" href="#">Инструмент</a></li>
-              <li class="footer__nav-item"><a class="link link_yellow" href="#">Спецпредложения</a></li>
-            </ul>
-          </div>
+    <footer class="main-footer">
+      <div class="footer-wrapper_blue">
+        <div class="main-footer__grid-container container">
+          <a class="logo-footer logo" href="#"><img  class="logo__pic" src="img/icons/logo.svg" alt="Техномарт" width="137" height="22"></a>
+          <p class="footer-contact">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+          <a class="footer__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+          </p>
+          <ul class="main-footer__nav nav">
+            <li class="footer__nav-item"><a class="link" href="#">Компания</a></li>
+            <li class="footer__nav-item"><a class="link" href="#">Новости</a></li>
+            <li class="footer__nav-item"><a class="link" href="catalog.html">Каталог</a></li>
+            <li class="footer__nav-item"><a class="link" href="#">Доставка</a></li>
+            <li class="footer__nav-item"><a class="link" href="#">Контакты</a></li>
+          </ul>
+          <ul class="main-footer__nav nav">
+            <li class="footer__nav-item"><a class="link link_yellow" href="#">Материалы</a></li>
+            <li class="footer__nav-item"><a class="link link_yellow" href="#">Техника</a></li>
+            <li class="footer__nav-item"><a class="link link_yellow" href="#">Инструмент</a></li>
+            <li class="footer__nav-item"><a class="link link_yellow" href="#">Спецпредложения</a></li>
+          </ul>
         </div>
-        <div class="footer-wrapper_darkblue">
-          <div class="main-footer__flex-container container">
-            <div class="copyright">
-              <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
-            </div>
-            <ul class="social">
-              <li class="social__item"><a class="social-icon" href="#"><img src="img/icons/icon-vk.svg" alt="VK" width="26" height="15"></a></li>
-              <li class="social__item"><a class="social-icon" href="#"><img src="img/icons/icon-fb.svg" alt="facebook" width="12" height="22"></a></li>
-              <li class="social__item"><a class="social-icon" href="#"><img src="img/icons/icon-insta.svg" alt="instagram" width="21" height="21"></a></li>
-            </ul>
-            <p class="email">Обратная связь:
-              <a class="footer-link"  href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </p>
-            <p class="email">Разработано -
-              <a class="footer-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademyru</a>
-            </p>
-          </div>
-        </div>
-      </footer>
-    </div>
-    <form  action="https://echo.htmlacademy.ru" method="post">
-      <div class="contact-form">
-        <div class="contact-form__container">
-          <div class="form-block_small">
-            <label for="name">Ваше имя:</label>
-            <input class="form__field form__field_small" type="text" name="name" id="name" placeholder="Имя Фамилия">
-          </div>
-          <div class="form-block_small">
-            <label for="email">Ваш e-mail:</label>
-            <input class="form__field form__field_small"  type="email" name="email" id="email" placeholder="email@example.com">
-          </div>
-          <div class="form-block_big">
-            <label for="messsage">Текст письма:</label>
-            <textarea class="form__field form__field_big "  id="messsage" placeholder="В свободной форме"></textarea> 
-          </div>
-        </div>
-        <div class="form-bottom-wrapper">
-          <div class="contact-form__container">
-            <button class="button-wide button button_red" type="submit">Отправить</button>
-          </div>
-        </div>
-        <button class="close" aria-label="Закрыть" type="button"></button>
       </div>
-    </form>
+      <div class="footer-wrapper_darkblue">
+        <div class="main-footer__flex-container container">
+          <div class="copyright">
+            <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
+          </div>
+          <ul class="social">
+            <li class="social__item"><a class="social-icon" href="#"><img src="img/icons/icon-vk.svg" alt="VK" width="26" height="15"></a></li>
+            <li class="social__item"><a class="social-icon" href="#"><img src="img/icons/icon-fb.svg" alt="facebook" width="12" height="22"></a></li>
+            <li class="social__item"><a class="social-icon" href="#"><img src="img/icons/icon-insta.svg" alt="instagram" width="21" height="21"></a></li>
+          </ul>
+          <p class="email">Обратная связь:
+            <a class="footer-link"  href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </p>
+          <p class="email">Разработано -
+            <a class="footer-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademyru</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <section class="modal modal-feedback">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <div class="feedback__container">
+          <div class="feedback__block_small">
+            <label  for="name">Ваше имя:</label>
+            <input class="field" type="text" name="name" id="name" placeholder="Имя Фамилия">
+          </div>
+          <div class="feedback__block_small">
+            <label for="email">Ваш e-mail:</label>
+            <input class="field"  type="email" name="email" id="email" placeholder="email@example.com">
+          </div>
+          <div class="feedback__block_big">
+            <label for="messsage">Текст письма:</label>
+            <textarea class="field textarea" id="messsage" placeholder="В свободной форме"></textarea> 
+          </div>
+        </div>
+        <div class="modal-wrapper">
+          <div class="feedback__container">
+           <button class="button-wide button button_red" type="submit">Отправить</button>
+          </div> 
+          <button class="close" aria-label="Закрыть" type="button"></button>
+        </div>
+     </form>
+    </section>
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Карта с местоположением</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1614364904160!5m2!1sru!2sru" width="943" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <button class="close" aria-label="Закрыть" type="button"></button>
+    </section>
 </body>
 </html>

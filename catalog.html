@@ -18,7 +18,7 @@
         <div class="search">
           <input class="link search-form" type="search" name="search" placeholder="Поиск:">
           <svg class="search-icon" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
           </svg>
         </div>
         <a class="link bookmarks" href="#">Закладки:</a>
@@ -28,14 +28,21 @@
     </div>
     <div class="main-header-wrapper">
       <div class="main-header__content container">
-        <p class="main-header__subtitle"><i>Интернет-магазин строительных материалов и инструментов для ремонта</i></p>
+        <p class="main-header__subtitle">Интернет-магазин строительных материалов <br>и инструментов для ремонта</p>
         <div class="main-header__contact">
           <a class="main-header__phone phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
           <p class="main-header__adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <div class="main-header__login">
-          <a class="button button_account login" href="#">Войти</a>
-          <a class="button button_account" href="#">Регистрация</a>
+          <a class="button button_account login-name" href="#">
+            <svg class="user-icon" width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 8.5L11.12 0v6h-6v5h6v6L20 8.5z" fill="#C5C5C5"/><path d="M2.1 13.95V3.05c.02-.38.18-1.06 1.02-1.06h5.02V0H3.12C.94 0 .12 1.81.09 3.03v10.94C.1 15.2.94 17 3.12 17h5.02v-1.99H3.12c-.84 0-1-.68-1.01-1.06z" fill="#C5C5C5"/></svg>
+            Равшан Джамшутович
+            <svg class="user-icon" width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.88 14.17c-2.14-.74-4.25-1.67-5.2-2.4-.66-.5-.78-1.61-.52-2.4a5.49 5.49 0 001.86-4.29C14.02 2.28 12.22 0 10 0 7.78 0 5.98 2.28 5.98 5.08c0 1.8.75 3.38 1.86 4.28.26.8.14 1.92-.51 2.42-.95.72-3.07 1.65-5.21 2.39C-.03 14.9 0 18 0 18h20s.02-3.1-2.12-3.83z" fill="#C5C5C5"/></svg>
+          </a>
+          <div class="user-nav">
+            <a class="user-nav__item" href="#">Мои заказы</a>
+            <a class="user-nav__item" href="#">Личный кабинет</a>
+          </div>
         </div>
       </div>    
       <nav class="main-header__menu container">
@@ -303,5 +310,15 @@
       </div>
     </div>
   </footer>
+  <section class="modal modal-added-to-cart">
+    <h2 class="modal-header">Товар добавлен в корзину!</h2>
+    <div class="modal-wrapper">
+      <div class="added-to-cart__container">
+        <button class="button button_red" type="button">Оформить заказ</button>
+        <button class="button button_white" type="button">Продолжить покупки</button>
+      </div>
+    </div>
+    <button class="close" aria-label="Закрыть" type="button"></button>
+  </section>
 </body>
 </html>
