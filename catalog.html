@@ -16,14 +16,14 @@
       <div class="submenu container">
         <a class="logo" href="index.html"><img  class="logo__pic" src="img/icons/logo.svg" alt="Техномарт" width="108" height="18"></a>
         <div class="search">
-          <input class="link search-form" type="search" name="search" placeholder="Поиск:">
+          <input class="search-form" type="search" name="search" placeholder="Поиск:">
           <svg class="search-icon" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
           </svg>
         </div>
-        <a class="link bookmarks" href="#">Закладки:</a>
-        <a class="link cart" href="#">Корзина:</a>
-        <button class="button button_green" type="button">Оформить заказ</button>
+        <a class="link bookmarks" href="#">Закладки: 0</a>
+        <a class="link cart not-empty" href="#">Корзина: 10</a>
+       <button class="button button_green" type="button">Оформить заказ</button>
       </div>
     </div>
     <div class="main-header-wrapper">
@@ -31,14 +31,13 @@
         <p class="main-header__subtitle">Интернет-магазин строительных материалов <br>и инструментов для ремонта</p>
         <div class="main-header__contact">
           <a class="main-header__phone phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-          <p class="main-header__adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p class="main-header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <div class="main-header__login">
-          <a class="button button_account login-name" href="#">
-            <svg class="user-icon" width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 8.5L11.12 0v6h-6v5h6v6L20 8.5z" fill="#C5C5C5"/><path d="M2.1 13.95V3.05c.02-.38.18-1.06 1.02-1.06h5.02V0H3.12C.94 0 .12 1.81.09 3.03v10.94C.1 15.2.94 17 3.12 17h5.02v-1.99H3.12c-.84 0-1-.68-1.01-1.06z" fill="#C5C5C5"/></svg>
+          <a class="button button_account login-name" href="#"><svg class="user-icon" width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.88 14.17c-2.14-.74-4.25-1.67-5.2-2.4-.66-.5-.78-1.61-.52-2.4a5.49 5.49 0 001.86-4.29C14.02 2.28 12.22 0 10 0 7.78 0 5.98 2.28 5.98 5.08c0 1.8.75 3.38 1.86 4.28.26.8.14 1.92-.51 2.42-.95.72-3.07 1.65-5.21 2.39C-.03 14.9 0 18 0 18h20s.02-3.1-2.12-3.83z" fill="#C5C5C5"/></svg>
             Равшан Джамшутович
-            <svg class="user-icon" width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.88 14.17c-2.14-.74-4.25-1.67-5.2-2.4-.66-.5-.78-1.61-.52-2.4a5.49 5.49 0 001.86-4.29C14.02 2.28 12.22 0 10 0 7.78 0 5.98 2.28 5.98 5.08c0 1.8.75 3.38 1.86 4.28.26.8.14 1.92-.51 2.42-.95.72-3.07 1.65-5.21 2.39C-.03 14.9 0 18 0 18h20s.02-3.1-2.12-3.83z" fill="#C5C5C5"/></svg>
           </a>
+          <a class="button_account logout"  href="#"><svg class="user-icon" width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 8.5L11.12 0v6h-6v5h6v6L20 8.5z" fill="#C5C5C5"/><path d="M2.1 13.95V3.05c.02-.38.18-1.06 1.02-1.06h5.02V0H3.12C.94 0 .12 1.81.09 3.03v10.94C.1 15.2.94 17 3.12 17h5.02v-1.99H3.12c-.84 0-1-.68-1.01-1.06z" fill="#C5C5C5"/></svg></a>
           <div class="user-nav">
             <a class="user-nav__item" href="#">Мои заказы</a>
             <a class="user-nav__item" href="#">Личный кабинет</a>
@@ -47,13 +46,13 @@
       </div>    
       <nav class="main-header__menu container">
         <ul class="main-header__nav nav">
-          <li class="nav__item"><a class="link" href="index.html">Главная</a> </li>
-          <li class="nav__item"><a class="link" href="#">Компания</a> </li>
-          <li class="nav__item"> <a class="link" href="catalog.html">Каталог</a> </li>
-          <li class="nav__item"><a class="link" href="#">Новости</a> </li>
-          <li class="nav__item"><a class="link" href="#">Спецпредложения</a> </li>
-          <li class="nav__item"><a class="link" href="#">Доставка</a> </li>
-          <li class="nav__item"><a class="link" href="#">Контакты</a> </li>
+          <li class="nav__item"><a class="nav-link link" href="index.html">Главная</a> </li>
+          <li class="nav__item"><a class="nav-link link" href="#">Компания</a> </li>
+          <li class="nav__item"> <a class="nav-link link" href="catalog.html">Каталог</a> </li>
+          <li class="nav__item"><a class="nav-link link" href="#">Новости</a> </li>
+          <li class="nav__item"><a class="nav-link link" href="#">Спецпредложения</a> </li>
+          <li class="nav__item"><a class="nav-link link" href="#">Доставка</a> </li>
+          <li class="nav__item"><a class="nav-link link" href="#">Контакты</a> </li>
         </ul>
       </nav>
     </div>
@@ -62,20 +61,20 @@
     <div class="container">
       <ul class="breadcrumbs">
         <li class="breadcrumbs__item">
-          <a href="index.html">Каталог</a>
+          <a class="breadcrumb__text" href="index.html">Каталог</a>
         </li>
         <li class="breadcrumbs__item">
-          <a href="#">Инструмент</a>
+          <a class="breadcrumb__text" href="#">Инструмент</a>
         </li>
         <li class="breadcrumbs__item">
           Перфораторы
         </li>
       </ul>
-      <h1 class="inner-header__title inner-header">Перфораторы</h1>
+      <h1 class="inner-header__title inner-header catalog-inner-header">Перфораторы</h1>
       <div class="main-catalog">
         <section class="main-catalog__section filter">
           <h2 class="section-title">Фильтр:</h2>
-          <form class="fieldset-group" method="get" action="https://echo.htmlacademy.ru">
+          <form class="fieldset-group" method="post" action="https://echo.htmlacademy.ru">
             <fieldset class="fieldset">
               <legend class="filter__category">Цена:</legend>
               <div class="range-filter">
@@ -87,15 +86,15 @@
                   <div class="toggle toggle-max" tabindex="0" style="left: 160px;"></div>
                 </div>
                 <div class="price-controls">
-                  <input type="number" name="min-price" value="0">
+                  <input class="price-number" type="number" name="min-price" value="0">
                   <span class="price-dash">&mdash;</span>
-                  <input type="number" name="max-price" value="30000">
+                  <input class="price-number"  type="number" name="max-price" value="30000">
                 </div>
               </div>
             </fieldset>
             <fieldset class="fieldset">
-              <legend class="filter__category brand-filter">Производители:</legend>
-              <ul>
+              <legend class="filter__category">Производители:</legend>
+              <ul class="filter__brand-list">
                 <li class="filter__item">
                   <input class="checkbox" type="checkbox" name="BOSCH" id="filter-bosch" checked>
                   <label class="filter__text" for="filter-bosch">BOSCH</label>
@@ -119,8 +118,8 @@
               </ul>
             </fieldset>
             <fieldset class="fieldset">
-              <legend class="filter__category">Питание:</legend>
-              <ul>
+              <legend class="filter__category power-source">Питание:</legend>
+              <ul class="filter__power-list">
                 <li class="filter__item">
                   <input class="radio" type="radio" name="power-source" id="filter-battery" checked>  
                   <label class="filter__text" for="filter-battery">Аккумуляторные</label>
@@ -138,18 +137,20 @@
           <h2 class="sort__title section-title">Сортировка</h2>
           <ul class="sort__items">
             <li class="sort__item">
-              <input type="radio" name="sorting" id="sort-by-price">
+              <input class="radio" type="radio" name="sorting" id="sort-by-price" checked>
               <label  for="sort-by-price">По цене</label>
             </li>
             <li class="sort__item">
-              <input type="radio" name="sorting" id="sort-by-type">
+              <input class="radio" type="radio" name="sorting" id="sort-by-type">
               <label  for="sort-by-type">По типу</label>
             </li>
             <li class="sort__item">
-              <input type="radio" name="sorting" id="sort-by-function">
+              <input class="radio" type="radio" name="sorting" id="sort-by-function">
               <label  for="sort-by-function">По функционалу</label>
             </li>
           </ul>
+          <button class="sort-button sort-by-increasing" type="button" aria-label="По возрастанию"></button>
+          <button class="sort-button sort-by-decreasing" type="button" aria-label="По убыванию"></button>
         </section>
         <section class="main-catalog__section catalog-content">
           <h2 class="visually-hidden">Товары</h2>
@@ -162,7 +163,7 @@
               </div>
               <h3 class="product__name">Перфоратор BOSCH BFG 6000</h3>
               <span class="product__prev-price"><s>30500 p.</s></span>
-              <button class="button product__button" type="button">25500 p.</button>
+              <div class="button product__button">25500 p.</div>
             </li>
             <li class="product">
               <a class="product__pic" href="#"><img src="img/products/bosch_bfg6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"></a>
@@ -172,9 +173,9 @@
               </div>
               <h3 class="product__name">Перфоратор BOSCH BFG 6000</h3>
               <span class="product__prev-price"><s>30500 p.</s></span>
-              <button class="button product__button" type="button">25500 p.</button>
+              <div class="button product__button">25500 p.</div>
             </li>
-            <li class="product">
+            <li class="product label-new">
               <a class="product__pic" href="#"><img src="img/products/bosch_bfg6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"></a>
               <div class="hover-buttons">
                 <button class="hover-button_buy">Купить</button>
@@ -182,9 +183,9 @@
               </div>
               <h3 class="product__name">Перфоратор BOSCH BFG 6000</h3>
               <span class="product__prev-price"><s>30500 p.</s></span>
-              <button class="button product__button" type="button">25500 p.</button>
+              <div class="button product__button">25500 p.</div>
             </li>
-            <li class="product">
+            <li class="product label-new">
               <a class="product__pic" href="#"><img src="img/products/bosch_bfg3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 3000"></a>
               <div class="hover-buttons">
                 <button class="hover-button_buy">Купить</button>
@@ -192,7 +193,7 @@
               </div>
               <h3 class="product__name">Перфоратор BOSCH BFG 3000</h3>
               <span class="product__prev-price">22500 p.</span>
-              <button class="button product__button" type="button">15500 p.</button>
+              <div class="button product__button">15500 p.</div>
             </li>
             <li class="product">
               <a class="product__pic" href="#"><img src="img/products/bosch_bfg6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"></a>
@@ -202,18 +203,18 @@
               </div>
               <h3 class="product__name">Перфоратор BOSCH BFG 6000</h3>
               <span class="product__prev-price"><s>30500 p.</s></span>
-              <button class="button product__button" type="button">25500 p.</button>
+              <div class="button product__button">25500 p.</div>
             </li>
-            <li class="product">
+            <li class="product label-new">
               <a class="product__pic" href="#"><img src="img/products/bosch_bfg2000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 2000"></a>
               <div class="hover-buttons">
                 <button class="hover-button_buy">Купить</button>
                 <button class="hover-button_bookmarks">В закладки</button>
               </div>
               <h3 class="product__name">Перфоратор BOSCH BFG 2000</h3>
-              <button class="button product__button" type="button">12500 p.</button>
+              <div class="button product__button">12500 p.</div>
             </li>
-            <li class="product">
+            <li class="product label-new">
               <a class="product__pic" href="#"><img src="img/products/bosch_bfg3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 3000"></a>
               <div class="hover-buttons">
                 <button class="hover-button_buy">Купить</button>
@@ -221,7 +222,7 @@
               </div>
               <h3 class="product__name">Перфоратор BOSCH BFG 3000</h3>
               <span class="product__prev-price"><s>22500 p.</s></span>
-              <button class="button product__button" type="button">15500 p.</button>
+              <div class="button product__button">15500 p.</div>
             </li>
             <li class="product">
               <a class="product__pic" href="#"><img src="img/products/bosch_bfg6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"></a>
@@ -231,30 +232,30 @@
               </div>
               <h3 class="product__name">Перфоратор BOSCH BFG 6000</h3>
               <span class="product__prev-price"><s>30500 p.</s></span>
-              <button class="button product__button" type="button">25500 p.</button>
+              <div class="button product__button">25500 p.</div>
             </li>
-            <li class="product">
+            <li class="product label-new">
               <a class="product__pic" href="#"><img src="img/products/bosch_bfg2000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 2000"></a>
               <div class="hover-buttons">
                 <button class="hover-button_buy">Купить</button>
                 <button class="hover-button_bookmarks">В закладки</button>
               </div>
               <h3 class="product__name">Перфоратор BOSCH BFG 2000</h3>
-              <button class="button product__button" type="button">12500 p.</button>
+              <div class="button product__button">12500 p.</div>
             </li>
           </ul>
           <ul class="pagination">
             <li class="page page-active">
-             <a >1</a>
+             <a class="page-num">1</a>
             </li>
             <li class="page">
-              <a href="#" >2</a>
+              <a class="page-num" href="#" >2</a>
             </li>
             <li class="page">
-              <a href="#">3</a>
+              <a class="page-num" href="#">3</a>
             </li>
             <li class="page">
-              <a href="#">Следующая</a>
+              <a class="page-next" href="#">Следующая</a>
             </li>
           </ul>
         </section>  
@@ -264,15 +265,15 @@
       <section class="catalog-descript container">
         <h2 class="catalog-descript__title">Пара слов о перфораторах</h2>
         <p class="catalog-descript__text">
-          Перфоратор — универсальный строительный инструмент. Предназначен длясверления и долбления отверстий в кирпиче, бетоне и камне.
-          Существуют электромеханические и пневматические перфораторы.Современные модели могут выполнять функции дрели шуруповерта иотбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»:в одном устройстве будут совмещены отбойный молоток и ударная дрель.<p>
+          Перфоратор — универсальный строительный инструмент.  Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. <br>В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.<p>
       </section>
     </div>
   </main>
   <footer class="main-footer">
     <div class="footer-wrapper_blue">
       <div class="main-footer__grid-container container">
-        <a class="logo" href="index.html"><img  class="logo__pic" src="img/icons/logo.svg" alt="Техномарт" width="108" height="18"></a>
+        <a class="logo-footer logo" href="index.html"><img  class="logo__pic" src="img/icons/logo.svg" alt="Техномарт" width="137" height="22"></a>
         <p class="footer-contact">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
         <a class="footer__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
         </p>
@@ -293,18 +294,16 @@
     </div>
     <div class="footer-wrapper_darkblue">
       <div class="main-footer__flex-container container">
-        <div class="copyright">
-          <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
-        </div>
+        <p class="copyright">© 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
         <ul class="social">
-          <li class="social__item"><a href="#"><img src="img/icons/icon-vk.svg" alt="VK" width="26" height="15"></a></li>
-          <li class="social__item"><a href="#"><img src="img/icons/icon-fb.svg" alt="facebook" width="12" height="22"></a></li>
-          <li class="social__item"><a href="#"><img src="img/icons/icon-insta.svg" alt="instagram" width="21" height="21"></a></li>
-       </ul>
-        <p>Обратная связь:
+          <li class="social__item"><a class="social-icon" href="#"><img src="img/icons/icon-vk.svg" alt="VK" width="26" height="15"></a></li>
+          <li class="social__item"><a class="social-icon" href="#"><img src="img/icons/icon-fb.svg" alt="facebook" width="12" height="22"></a></li>
+          <li class="social__item"><a class="social-icon" href="#"><img src="img/icons/icon-insta.svg" alt="instagram" width="21" height="21"></a></li>
+        </ul>
+        <p class="email">Обратная связь:
           <a class="footer-link"  href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
-        <p>Разработано -
+        <p class="email">Разработано -
           <a class="footer-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademyru</a>
         </p>
       </div>
