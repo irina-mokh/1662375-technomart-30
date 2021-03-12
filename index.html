@@ -104,8 +104,8 @@
               <button class="next-slide slide-arrow" type="button" aria-label="Следующий слайд"></button>
             </div>
             <div class="slider__controls">
-              <button type="button" aria-label="Первый слайд"></button>
-              <button class="current" type="button" aria-label="Второй слайд"></button>
+              <button class="slider__control" type="button" aria-label="Первый слайд"></button>
+              <button class="slider__control current" type="button" aria-label="Второй слайд"></button>
             </div>
           </li>
         </ul>
@@ -196,12 +196,15 @@
           <p class="services__text">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           <div class="services__container">
             <div class="services__buttons">
-              <button type="button" class="button services__button btn-delivery services__button_active">Доставка</button>
-              <button type="button" class="button services__button btn-garantee">Гарантия</button>
-              <button type="button" class="button services__button btn-credit">Кредит</button>
+              <input type="radio" name="services-button" id="btn-delivery" class="services-radio-btn btn-delivery"checked>
+              <label for="btn-delivery" class="button services__button btn-delivery">Доставка</label>
+              <input type="radio" name="services-button" id="btn-garantee" class="services-radio-btn btn-garantee">
+              <label for="btn-garantee" class="button services__button btn-garantee">Гарантия</label>
+              <input type="radio" name="services-button" id="btn-credit" class="services-radio-btn btn-credit">
+              <label for="btn-credit" class="button services__button btn-credit">Кредит</button>
             </div>
             <div class="services__content">
-              <section class="services__item services__delivery services_active">
+              <section class="services__item services__delivery">
                 <h3 class="services__subheader">Доставка</h3>
                 <p class="services__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем <br> поднимая его на ваш этаж!</p>
               </section>

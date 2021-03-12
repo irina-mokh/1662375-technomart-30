@@ -38,30 +38,17 @@ btnsBuy.forEach((btnBuy) =>{
   btnBuy.addEventListener("click", function (evt) {
     evt.preventDefault();
     modalAddedToCart.classList.add("modal-show");
-  })
-});
-
-const srvcBtns = document.querySelectorAll(".services-button");
-srvcBtns.forEach((srvcBtn)=> {
-  srvcBtn.addEventListener("click", function(evt) {
-    evt.preventDefault();
-    srvcBtn.classList.add("services__button_active");
-  })
+  });
 });
 
 const btnDelivery = document.querySelector(".btn-delivery");
 const btnGarantee = document.querySelector(".btn-garantee");
 const btnCredit = document.querySelector(".btn-credit");
 
-btnDelivery.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  document.querySelector(".services__delivery").classList("services-active");
-});
-btnGarantee.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  document.querySelector(".services__garantee").classList("services-active");
-});
-btnCredit.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  document.querySelector(".services__credit").classList("services-active");
-});
+if (btnDelivery.checked) {
+  document.querySelector(".services__delivery").classList.add(".services_active");
+} else if (btnGarantee.checked) {
+    document.querySelector(".services__garantee").classList.add(".services_active");
+  } else {
+    document.querySelector(".services__credit").classList.add(".services_active");
+  };

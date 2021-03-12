@@ -736,7 +736,7 @@
   justify-content: space-between;
 }
 
-.slider__controls button {
+.slider__control {
   padding: 0;
   width: 10px;
   height: 10px;
@@ -746,7 +746,7 @@
   cursor: pointer;
 }
 
-.slider__controls .current {
+.slider__control.current {
   background-color: var(--basic-red);
 }
 
@@ -996,6 +996,10 @@
   height: 279px;
 }
 
+.services-radio-btn {
+  display: none;
+}
+
 .services__button {
   font-weight: 700;
   font-size: 21px;
@@ -1020,10 +1024,17 @@
   color: var(--basic-blue);
 }
 
-.services__button_active {
+.services-radio-btn:checked +.services__button {
   color: var(--basic-blue);
   background-color: var(--basic-white);
 }
+/*
+.btn-delivery:checked~.services__delivery,
+.btn-garantee~.services__garantee,
+.btn-credit~.services__credit {
+  display: block;
+}
+*/
 
 .services__content {
   flex: 1 620px;
