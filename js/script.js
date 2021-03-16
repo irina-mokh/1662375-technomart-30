@@ -41,14 +41,56 @@ btnsBuy.forEach((btnBuy) =>{
   });
 });
 
-const btnDelivery = document.querySelector(".btn-delivery");
-const btnGarantee = document.querySelector(".btn-garantee");
-const btnCredit = document.querySelector(".btn-credit");
+/*Services
+const tabs = document.querySelectorAll(".services__button");
+const tabsItems = document.querySelectorAll(".services__item");
+for (n = 0; n < tabs.length; n++) {
+  tabs[n].addEventListener("click", function() {
+    tabsItems[n].classList.add("services_active");
+  });
+};
+*/
 
-if (btnDelivery.checked) {
-  document.querySelector(".services__delivery").classList.add(".services_active");
-} else if (btnGarantee.checked) {
-    document.querySelector(".services__garantee").classList.add(".services_active");
-  } else {
-    document.querySelector(".services__credit").classList.add(".services_active");
-  };
+//Slider
+const sliderItems = document.querySelectorAll(".slider__item");
+let i = 1;
+const btnPrev = document.querySelector(".prev-slide");
+const btnNext = document.querySelector(".next-slide");
+
+let sliderControls = document.querySelectorAll(".slider__control");
+
+btnPrev.addEventListener("click", function(evt){
+  evt.preventDefault();
+  sliderRefresh();
+  i--;
+  if (i < 0) {
+    i = sliderItems.length - 1;
+  }
+  sliderRefresh();
+});
+btnNext.addEventListener("click", function(evt){
+  evt.preventDefault();
+  sliderRefresh();
+  i++;
+  if (i >= sliderItems.length) {
+    i = 0;
+  }
+  sliderRefresh();
+});
+
+function sliderRefresh() {
+  sliderItems[i].classList.toggle("slider_current");
+  sliderControls[i].classList.toggle("current");
+};
+
+sliderControls.forEach((dot, i) =>{
+  dot.addEventListener("click", (evt) => {
+    evt.preventDefault;
+    let sliderItem = document.querySelector(".slider__item.slider_current");
+    let sliderDot = document.querySelector(".slider__control.current");
+    sliderDot.classList.remove ("current");
+    sliderItem.classList.remove("slider_current");
+    sliderControls[i].classList.add ("current");
+    sliderItems[i].classList.add("slider_current");
+  })
+});

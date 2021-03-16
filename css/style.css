@@ -744,6 +744,7 @@
   background-color: var(--basic-white);
   border-radius: 50%;
   cursor: pointer;
+  outline: none;
 }
 
 .slider__control.current {
@@ -756,7 +757,6 @@
 
 .slider__item_drills {
   background: url("../img/slider-drill.png") no-repeat;
-  display: none;
 }
 
 .inner-header__title {
@@ -1012,6 +1012,7 @@
   color: var(--basic-white);
   background-color: var(--basic-blue);
   box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+  box-sizing: border-box;
 }
 
 .services__button:hover {
@@ -1028,13 +1029,6 @@
   color: var(--basic-blue);
   background-color: var(--basic-white);
 }
-/*
-.btn-delivery:checked~.services__delivery,
-.btn-garantee~.services__garantee,
-.btn-credit~.services__credit {
-  display: block;
-}
-*/
 
 .services__content {
   flex: 1 620px;
