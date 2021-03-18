@@ -8,7 +8,7 @@
   <link rel="apple-touch-icon" href="img/icons/favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body class="page-body">
   <header class="main-header">
@@ -16,7 +16,8 @@
       <div class="submenu container">
         <a class="logo" href="index.html"><img class="logo__pic" src="img/icons/logo.svg" alt="Техномарт" width="108" height="18"></a>
         <form action="get" class="search">
-          <input class="search-form" type="search" name="search" placeholder="Поиск:">
+          <input class="search-form" id="search" type="search" name="search" placeholder="Поиск:">
+          <label class="visually-hidden" for="search"></label>
           <svg class="search-icon" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="currentColor"/>
           </svg>
@@ -37,7 +38,7 @@
           <a class="button button_account login-name" href="#"><svg class="user-icon" width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.88 14.17c-2.14-.74-4.25-1.67-5.2-2.4-.66-.5-.78-1.61-.52-2.4a5.49 5.49 0 001.86-4.29C14.02 2.28 12.22 0 10 0 7.78 0 5.98 2.28 5.98 5.08c0 1.8.75 3.38 1.86 4.28.26.8.14 1.92-.51 2.42-.95.72-3.07 1.65-5.21 2.39C-.03 14.9 0 18 0 18h20s.02-3.1-2.12-3.83z" fill="currentColor"/></svg>
             Равшан Джамшутович
           </a>
-          <a class="button_account logout" href="#"><svg class="user-icon" width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 8.5L11.12 0v6h-6v5h6v6L20 8.5z" fill="currentColor"/><path d="M2.1 13.95V3.05c.02-.38.18-1.06 1.02-1.06h5.02V0H3.12C.94 0 .12 1.81.09 3.03v10.94C.1 15.2.94 17 3.12 17h5.02v-1.99H3.12c-.84 0-1-.68-1.01-1.06z" fill="currentColor"/></svg></a>
+          <a class="button_account logout" aria-label="Выйти из аккаунта" href="#"><svg class="user-icon" width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 8.5L11.12 0v6h-6v5h6v6L20 8.5z" fill="currentColor"/><path d="M2.1 13.95V3.05c.02-.38.18-1.06 1.02-1.06h5.02V0H3.12C.94 0 .12 1.81.09 3.03v10.94C.1 15.2.94 17 3.12 17h5.02v-1.99H3.12c-.84 0-1-.68-1.01-1.06z" fill="currentColor"/></svg></a>
           <div class="user-nav">
             <a class="user-nav__item" href="#">Мои заказы</a>
             <a class="user-nav__item" href="#">Личный кабинет</a>
@@ -61,7 +62,10 @@
     <div class="container">
       <ul class="breadcrumbs">
         <li class="breadcrumbs__item">
-          <a class="breadcrumb__text" href="index.html">Каталог</a>
+          <a class="breadcrumbs__home" href="index.html"></a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumb__text" href="catalog.html">Каталог</a>
         </li>
         <li class="breadcrumbs__item">
           <a class="breadcrumb__text" href="#">Инструмент</a>
@@ -86,9 +90,11 @@
                   <div class="toggle toggle-max" tabindex="0" style="left: 160px;"></div>
                 </div>
                 <div class="price-controls">
-                  <input class="price-number" type="number" name="min-price" value="0">
+                  <input class="price-number" id="min-price" type="number" name="min-price" value="0">
+                  <label class="visually-hidden" for="min-price"></label>
                   <span class="price-dash">&mdash;</span>
-                  <input class="price-number" type="number" name="max-price" value="30000">
+                  <input class="price-number" id="max-price" type="number" name="max-price" value="30000">
+                  <label class="visually-hidden" for="max-price"></label>
                 </div>
               </div>
             </fieldset>
@@ -136,27 +142,22 @@
         <section class="main-catalog__section sort">
           <h2 class="sort__title section-title">Сортировка</h2>
           <ul class="sort__items">
-            <li class="sort__item">
-              <input class="radio" type="radio" name="sorting" id="sort-by-price" checked>
-              <label class="sort-text" for="sort-by-price">По цене</label>
+            <li class="sort__item sort__item_checked">
+              <a class="sort-text" href="#">По цене</a>
             </li>
             <li class="sort__item">
-              <input class="radio" type="radio" name="sorting" id="sort-by-type">
-              <label class="sort-text"  for="sort-by-type">По типу</label>
+              <a class="sort-text" href="#">По типу</a>
             </li>
             <li class="sort__item">
-              <input class="radio" type="radio" name="sorting" id="sort-by-function">
-              <label class="sort-text"  for="sort-by-function">По функционалу</label>
+              <a class="sort-text" href="#">По функционалу</a>
             </li>
           </ul>
-          <input class="radio" id="sort-by-decreasing" type="radio" name="sort-direction" aria-label="По возрастанию">
-          <label for="sort-by-decreasing" class="sort-button sort-by-decreasing"></label>
-          <input class="radio" id="sort-by-increasing" type="radio" name="sort-direction" aria-label="По убыванию">
-          <label for="sort-by-increasing" class="sort-button sort-by-increasing"></label>
+          <a aria-label="По возрастанию" class="sort-button sort-by-decreasing sort-button_active"></a>
+          <a aria-label="По убыванию" class="sort-button sort-by-increasing"></a>
         </section>
         <section class="main-catalog__section catalog-content">
           <h2 class="visually-hidden">Товары</h2>
-          <ul class="goods">
+          <ul class="catalog">
             <li class="product">
               <a class="product__pic" href="#"><img class="img-alignment-basic" src="img/products/bosch_bfg6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"></a>
               <div class="hover-buttons">
@@ -263,10 +264,10 @@
         </section>
       </div>
     </div>
-    <div class="catalog-descript-wrapper">
-      <section class="catalog-descript container">
-        <h2 class="catalog-descript__title">Пара слов о перфораторах</h2>
-        <p class="catalog-descript__text">
+    <div class="catalog-description-wrapper">
+      <section class="catalog-description container">
+        <h2 class="catalog-description__title">Пара слов о перфораторах</h2>
+        <p class="catalog-description__text">
           Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
           Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. <br>В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.<p>
       </section>
@@ -298,9 +299,9 @@
       <div class="main-footer__flex-container container">
         <p class="copyright">© 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
         <ul class="social">
-          <li class="social__item"><a class="social-icon" href="#"><img src="img/icons/icon-vk.svg" alt="VK" width="26" height="15"></a></li>
-          <li class="social__item"><a class="social-icon" href="#"><img src="img/icons/icon-fb.svg" alt="facebook" width="12" height="22"></a></li>
-          <li class="social__item"><a class="social-icon" href="#"><img src="img/icons/icon-insta.svg" alt="instagram" width="21" height="21"></a></li>
+          <li class="social__item"><a class="social-icon" href="#"><img src="img/icons/icon-vk.svg" alt="VK" aria-label="VK" width="26" height="15"></a></li>
+          <li class="social__item"><a class="social-icon" href="#"><img src="img/icons/icon-fb.svg" alt="facebook" aria-label="facebook" width="12" height="22"></a></li>
+          <li class="social__item"><a class="social-icon" href="#"><img src="img/icons/icon-insta.svg" alt="instagram" aria-label="instagram" width="21" height="21"></a></li>
         </ul>
         <p class="email">Обратная связь:
           <a class="footer-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
@@ -321,6 +322,6 @@
     </div>
     <button class="close" aria-label="Закрыть" type="button"></button>
   </section>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 </html>

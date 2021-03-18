@@ -8,7 +8,7 @@
   <link rel="apple-touch-icon" href="img/icons/favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body class="page-body">
   <header class="main-header">
@@ -16,7 +16,8 @@
       <div class="submenu container">
         <a class="logo"><img class="logo__pic" src="img/icons/logo.svg" alt="Техномарт" width="108" height="18"></a>
         <form action="get" class="search">
-          <input class="search-form" type="search" name="search" placeholder="Поиск:">
+          <input class="search-form" id="search" type="search" name="search" placeholder="Поиск:">
+          <label class="visually-hidden" for="search"></label>
           <svg class="search-icon" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="currentColor"/>
           </svg>
@@ -164,28 +165,28 @@
           </header>
           <ul class="brand">
             <li class="brand__item">
-              <a href="#"><img src="img/brands/bosch.png" alt="BOSCH" width="126" height="37"></a>
+              <a class="brand__logo" href="#"><img src="img/brands/bosch.png" alt="BOSCH" width="126" height="37"></a>
             </li>
             <li class="brand__item">
-              <a href="#"><img src="img/brands/makita.png" alt="makita" width="123" height="40"></a>
+              <a class="brand__logo" href="#"><img src="img/brands/makita.png" alt="makita" width="123" height="40"></a>
             </li>
             <li class="brand__item">
-              <a href="#"><img src="img/brands/dewalt.png" alt="DeWALT" width="146" height="44"></a>
+              <a class="brand__logo" href="#"><img src="img/brands/dewalt.png" alt="DeWALT" width="146" height="44"></a>
             </li>
             <li class="brand__item">
-              <a href="#"><img src="img/brands/interskol.png" alt="Интерскол" width="200" height="76"></a>
+              <a class="brand__logo" href="#"><img src="img/brands/interskol.png" alt="Интерскол" width="200" height="76"></a>
             </li>
             <li class="brand__item">
-              <a href="#"><img src="img/brands/hitachi.png" alt="HITACHI" width="169" height="31"></a>
+              <a class="brand__logo" href="#"><img src="img/brands/hitachi.png" alt="HITACHI" width="169" height="31"></a>
             </li>
             <li class="brand__item">
-              <a href="#"><img src="img/brands/lg.png" alt="LG" width="121" height="73"></a>
+              <a class="brand__logo" href="#"><img src="img/brands/lg.png" alt="LG" width="121" height="73"></a>
             </li>
             <li class="brand__item">
-              <a href="#"><img src="img/brands/aeg.png" alt="AEG" width="151" height="98"></a>
+              <a class="brand__logo" href="#"><img src="img/brands/aeg.png" alt="AEG" width="151" height="98"></a>
             </li>
            <li class="brand__item">
-              <a href="#"><img src="img/brands/metabo.png" alt="metabo" width="206" height="73"></a> 
+              <a class="brand__logo" href="#"><img src="img/brands/metabo.png" alt="metabo" width="206" height="73"></a> 
            </li>
           </ul>
         </section> 
@@ -234,10 +235,10 @@
           <section class="about__container">
             <h3 class="title">Контакты</h3>
             <p class="about__text">Вы можете забрать товар сами,<br> заехав в наш офис:</p>
-            <button class="map" type="button">
+            <a class="map" href="https://goo.gl/maps/j6P2UKHhiQk7Xgxs9">
               <img src="img/map.png" alt="Карта с местоположением" width="300" height="158">
-            </button>
-            <a class="button button_red button-feedback" href="#">Заблудились? Напишите нам!</a>
+            </a>
+            <a class="button button_red button-feedback" href="writeus.html">Заблудились? Напишите нам!</a>
           </section>
         </div>
       </div>
@@ -268,9 +269,9 @@
         <div class="main-footer__flex-container container">
           <p class="copyright">© 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
           <ul class="social">
-            <li class="social__item"><a class="social-icon" href="#"><img src="img/icons/icon-vk.svg" alt="VK" width="26" height="15"></a></li>
-            <li class="social__item"><a class="social-icon" href="#"><img src="img/icons/icon-fb.svg" alt="facebook" width="12" height="22"></a></li>
-            <li class="social__item"><a class="social-icon" href="#"><img src="img/icons/icon-insta.svg" alt="instagram" width="21" height="21"></a></li>
+            <li class="social__item"><a class="social-icon" href="#"><img src="img/icons/icon-vk.svg" alt="VK" aria-label="VK" width="26" height="15"></a></li>
+            <li class="social__item"><a class="social-icon" href="#"><img src="img/icons/icon-fb.svg" alt="facebook" aria-label="facebook" width="12" height="22"></a></li>
+            <li class="social__item"><a class="social-icon" href="#"><img src="img/icons/icon-insta.svg" alt="instagram" aria-label="instagram" width="21" height="21"></a></li>
           </ul>
           <p class="email">Обратная связь:
             <a class="footer-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
@@ -308,6 +309,7 @@
     </section>
     <section class="modal modal-map">
       <h2 class="visually-hidden">Карта с местоположением</h2>
+      <img class="extra-map" width="943" height="450" src="img/extra-map.png" alt="Карта с местоположением">
       <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1614364904160!5m2!1sru!2sru" width="943" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       <button class="close" aria-label="Закрыть" type="button"></button>
     </section>
@@ -321,6 +323,6 @@
       </div>
       <button class="close" aria-label="Закрыть" type="button"></button>
     </section>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
 </body>
 </html>

@@ -41,16 +41,6 @@ btnsBuy.forEach((btnBuy) =>{
   });
 });
 
-/*Services
-const tabs = document.querySelectorAll(".services__button");
-const tabsItems = document.querySelectorAll(".services__item");
-for (n = 0; n < tabs.length; n++) {
-  tabs[n].addEventListener("click", function() {
-    tabsItems[n].classList.add("services_active");
-  });
-};
-*/
-
 //Slider
 const sliderItems = document.querySelectorAll(".slider__item");
 let i = 1;
