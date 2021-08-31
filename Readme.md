@@ -1,5 +1,6 @@
 # Личный проект «Техномарт»
 
+https://irina-mokh.github.io/1662375-technomart-30/
 * Студент: [Ирина  Мох](https://up.htmlacademy.ru/htmlcss/30/user/1662375).
 * Наставник: [Валерий Крукович](https://htmlacademy.ru/profile/id303175).
 
